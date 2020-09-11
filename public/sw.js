@@ -1,5 +1,5 @@
-var CACHE_NAME = 'static-cache-v1';
-var assetsToCache = [
+const CACHE_NAME = 'static-cache-v1';
+const assetsToCache = [
   '/',
   '/styles.css',
   '/index.js',
