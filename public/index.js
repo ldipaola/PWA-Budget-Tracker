@@ -1,3 +1,4 @@
+const formDiv = document.querySelector(".form");
 let transactions = [];
 let myChart;
 
@@ -151,3 +152,13 @@ document.querySelector("#add-btn").onclick = function() {
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
+
+function appOffline() {
+    const offlineElement = document.createElement("div");
+    offlineElement.setAttribute('id', "offline");
+    offlineElement.classList.add("offline", "mode", "no-connection");
+    offlineElement.textContent = "Offline, app will sync on reconnect";
+    formDiv.prepend(offlineElement);
+};
+
+window.addEventListener("offline", appOffline);

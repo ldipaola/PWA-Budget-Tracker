@@ -25,6 +25,11 @@ tr:nth-child(even) {
 .error {
   color: red;
 }
+#offline{
+  font-size: 1em;
+  color: red;
+  margin-bottom: 1em;
+}
 
 .wrapper {
   margin: 0 auto;
